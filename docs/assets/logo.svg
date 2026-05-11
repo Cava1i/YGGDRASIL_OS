@@ -1,0 +1,82 @@
+<svg width="1040" height="280" viewBox="0 0 1040 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">YGGDRASIL_OS</title>
+  <defs>
+    <linearGradient id="bg" x1="40" y1="28" x2="1000" y2="252" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101E1B"/>
+      <stop offset="0.52" stop-color="#07100F"/>
+      <stop offset="1" stop-color="#111926"/>
+    </linearGradient>
+    <linearGradient id="trunk" x1="186" y1="54" x2="186" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8D98C"/>
+      <stop offset="1" stop-color="#B97020"/>
+    </linearGradient>
+    <linearGradient id="branchA" x1="82" y1="66" x2="302" y2="72" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4AC8CE"/>
+      <stop offset="1" stop-color="#9EA7FF"/>
+    </linearGradient>
+    <linearGradient id="branchB" x1="54" y1="210" x2="326" y2="212" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4AC8CE"/>
+      <stop offset="0.5" stop-color="#7BD889"/>
+      <stop offset="1" stop-color="#F1BD61"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(186 137) rotate(90) scale(104)">
+      <stop stop-color="#4AC8CE" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#4AC8CE" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#4AC8CE" stroke-opacity="0.065"/>
+    </pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1040" height="280" rx="28" fill="#050A09"/>
+  <rect x="22" y="22" width="996" height="236" rx="22" fill="url(#bg)" stroke="#4AC8CE" stroke-opacity="0.34" stroke-width="2"/>
+  <rect x="22" y="22" width="996" height="236" rx="22" fill="url(#grid)"/>
+
+  <path d="M48 64H108L127 46H245L264 64H334" stroke="#4AC8CE" stroke-opacity="0.22" stroke-width="2"/>
+  <path d="M48 216H108L127 234H245L264 216H334" stroke="#F1BD61" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M704 60H980" stroke="#4AC8CE" stroke-opacity="0.17" stroke-width="2"/>
+  <path d="M704 220H980" stroke="#F1BD61" stroke-opacity="0.15" stroke-width="2"/>
+  <circle cx="980" cy="60" r="4" fill="#4AC8CE" fill-opacity="0.8"/>
+  <circle cx="980" cy="220" r="4" fill="#F1BD61" fill-opacity="0.75"/>
+
+  <g filter="url(#glow)">
+    <circle cx="186" cy="137" r="104" fill="url(#halo)"/>
+
+    <path d="M186 228V166" stroke="url(#trunk)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M186 166V62" stroke="url(#trunk)" stroke-width="10" stroke-linecap="round"/>
+
+    <path d="M186 116C151 111 121 91 96 60" stroke="url(#branchA)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M186 112C219 96 245 74 265 43" stroke="url(#branchA)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M186 91C161 83 145 69 136 48" stroke="#9EA7FF" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M186 91C212 80 229 64 238 41" stroke="#9EA7FF" stroke-width="4.5" stroke-linecap="round"/>
+
+    <path d="M186 164C143 166 103 186 68 221" stroke="url(#branchB)" stroke-width="5.5" stroke-linecap="round"/>
+    <path d="M186 164C230 166 270 187 306 224" stroke="url(#branchB)" stroke-width="5.5" stroke-linecap="round"/>
+    <path d="M186 195C159 202 137 215 118 235" stroke="#7BD889" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M186 195C214 202 237 216 258 238" stroke="#7BD889" stroke-width="4.5" stroke-linecap="round"/>
+
+    <circle cx="186" cy="137" r="18" fill="#07100F" stroke="#F1BD61" stroke-width="5"/>
+    <circle cx="96" cy="60" r="8" fill="#4AC8CE"/>
+    <circle cx="265" cy="43" r="8" fill="#4AC8CE"/>
+    <circle cx="136" cy="48" r="6" fill="#9EA7FF"/>
+    <circle cx="238" cy="41" r="6" fill="#9EA7FF"/>
+    <circle cx="68" cy="221" r="7" fill="#7BD889"/>
+    <circle cx="306" cy="224" r="7" fill="#7BD889"/>
+    <circle cx="118" cy="235" r="5" fill="#F1BD61"/>
+    <circle cx="258" cy="238" r="5" fill="#F1BD61"/>
+  </g>
+
+  <g>
+    <rect x="378" y="76" width="522" height="84" rx="12" fill="#07100F" fill-opacity="0.72" stroke="#4AC8CE" stroke-opacity="0.24"/>
+    <text x="406" y="135" fill="#EDF5F2" font-family="Consolas, Cascadia Mono, JetBrains Mono, monospace" font-size="56" font-weight="900" letter-spacing="3">YGGDRASIL_OS</text>
+    <path d="M378 190H900" stroke="#4AC8CE" stroke-opacity="0.2" stroke-width="2"/>
+    <path d="M378 190H552" stroke="#F1BD61" stroke-opacity="0.74" stroke-width="2"/>
+  </g>
+</svg>

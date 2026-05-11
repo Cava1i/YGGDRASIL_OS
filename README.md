@@ -1,10 +1,35 @@
-# YGGDRASIL_OS 团队协作系统
+<p align="center">
+  <img src="docs/assets/logo.svg" alt="YGGDRASIL_OS" width="520"/>
+</p>
 
-YGGDRASIL_OS 是一个面向 CTF / 电子数据取证比赛的团队协作平台。YGGDRASIL 取自北欧神话中的“世界树”，在本项目中象征团队成员、题目线索、答案记录和 Writeup 共同生长的协作网络。
+<h1 align="center">YGGDRASIL_OS</h1>
 
-本系统主要面向“非答案当场验证”的比赛协作场景：不同于传统 CTF 平台提交 flag 后立即返回正确或错误，这类比赛通常要求团队在比赛过程中共同研判题目、沉淀证据和候选答案，并在最后统一提交最终答案。YGGDRASIL_OS 的核心价值就是帮助团队在这种无法即时判题的环境中统一记录、比对、讨论和收敛答案。
+<p align="center">
+  <em>面向非即时判题 CTF / 电子数据取证比赛的团队协作战情室。</em>
+</p>
 
-项目采用前后端分离架构，前端提供比赛、题目、答案、Writeup 和备注的协作看板，后端负责用户认证、题目数据、文件上传、实时刷新和 Excel 批量处理。
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.8--3.11-3776AB?logo=python&logoColor=white" alt="Python 3.8-3.11"/>
+  <img src="https://img.shields.io/badge/Vue-3-42b883?logo=vue.js&logoColor=white" alt="Vue 3"/>
+  <img src="https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white" alt="Vite 5"/>
+  <img src="https://img.shields.io/badge/Flask-3-111111?logo=flask&logoColor=white" alt="Flask 3"/>
+  <img src="https://img.shields.io/badge/SQLite-storage-044a64?logo=sqlite&logoColor=white" alt="SQLite storage"/>
+  <img src="https://img.shields.io/badge/SSE-realtime-2ea043" alt="SSE realtime"/>
+  <img src="https://img.shields.io/badge/Excel-import%2Fexport-f1bd61" alt="Excel import and export"/>
+  <img src="https://img.shields.io/badge/Admin-war%20room-8957e5" alt="Admin war room"/>
+</p>
+
+---
+
+**约 53 个文件 · 约 8k 行文本 · 16 张界面截图 · 17 个后端测试 · Vue 3 / Vite 前端 · Flask API · SQLite 持久化 · SSE 实时刷新 · Excel 导入导出 · 管理员战情室**
+
+YGGDRASIL_OS 专为团队 **无法当场验证答案** 的比赛场景设计。不同于传统 CTF 平台提交 flag 后立即返回正确或错误，这类比赛通常需要队员在比赛过程中共同研判题目、比对证据、收敛候选答案，并在最后统一提交最终结果。
+
+YGGDRASIL_OS 将这套协作流程整理成一个共享工作台：比赛空间、题目看板、答案一致率统计、Writeup 与备注协作、附件管理、Excel 批量导入导出、邀请码注册、用户管理、数据库备份和审计日志。
+
+YGGDRASIL 源自北欧神话中的世界树。在这个项目中，它代表一张团队协作网络：成员、线索、答案、证据和 Writeup 像树的枝干一样共同生长，最终汇聚到统一提交的答案。
+
+![YGGDRASIL_OS 控制中心](docs/USER_MANUAL_GITHUB_TEMPLATE.assets/image-20260511122504743.png)
 
 ## 功能概览
 
@@ -325,4 +350,4 @@ python recreate_db.py
 
 ## 许可证
 
-当前 README 沿用原项目说明中的 MIT License。如需开源发布，建议在仓库根目录补充正式的 `LICENSE` 文件。
+本项目采用 [MIT License](LICENSE) 开源协议。
